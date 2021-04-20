@@ -1,0 +1,7 @@
+.box {background-color: #1935B7;
+width: 600px;
+padding: 20px;
+border: 2px solid red;
+box-sizing: border-box;}
+.box h1 {font-size: 24px;
+color: white;}
