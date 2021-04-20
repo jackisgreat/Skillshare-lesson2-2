@@ -1,7 +1,339 @@
-.box {background-color: #1935B7;
-width: 600px;
-padding: 20px;
-border: 2px solid red;
-box-sizing: border-box;}
-.box h1 {font-size: 24px;
-color: white;}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    margin: 0;
+}
+/*HEADER NAVIGATION*/
+
+
+header {
+    width: 100%;
+    margin: 0;
+}
+header .navigation {
+    background-color: #599931;
+    width: 100%;
+    position: fixed;
+    margin: 20px 0 0 0;
+    z-index: 3;
+    }
+header .navigation nav {
+    font-family: hero-new, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    display: inline-block;
+    padding:0px 5%;
+    width: 100px;
+    text-align: center;
+    }
+nav a {
+    text-align: center;
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    margin: auto ;
+    height: 35px;
+    padding: 0px 10px;
+}
+nav a:hover {
+    background-color: white;
+    color: black;
+    
+}
+nav a:active, p:active {
+    background-color: black;
+    color: white;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+header .navigation img {
+    float: none;
+    position: absolute;
+    top: 50%;    
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    border-radius: 50%;
+    border: 2px solid #F4B736;
+        animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+header .navigation img:hover {
+
+    transform: rotate(360deg)
+}
+
+
+
+
+/*MAIN*/
+
+
+main{
+    width: 100%;
+    margin: 0;
+    padding-bottom: 100px;
+}
+main .parent1 {position: relative;}
+main .parent1 img {
+    width:100%;
+    z-index: 1;
+    ;}
+main .parent1 h1 {
+    font-family: ccbiffbamboom, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 40px;
+    z-index: 2;
+    position: absolute;
+    left:5%;
+    bottom: 5%;
+    text-shadow: 3px 3px 0px black;
+    display: inline-block;
+}
+
+/*MAIN FLEX SOLUTION*/
+
+
+.parent2 {
+    margin-top: -0px;
+    width: 100%;
+    display: flex;
+}
+.child {
+    display: block;
+    margin: 0 auto;
+    width:20%;
+    padding:20px;
+}
+.child a img {
+    width: 100px;
+    border-radius: 50%;
+    border: solid 3px #599931;
+    display: block;
+    margin: 0 auto;
+    }
+.child h3 {
+    color: black;
+    font-family: hero-new, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    font-size:14px;
+}
+
+.child p {
+    color: black;
+    font-family: hero-new, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    text-align: left;
+}
+
+/*descriptions*/
+
+/*DONNIE*/
+.purple-box{
+    width: 100%;
+    height: 45px;
+    margin: 50px 0px;
+    background-color: #955AA5;
+    transform: rotate(-8deg) skewY(8deg);
+    position: sticky;
+    top:50px;
+}
+.purple-box h2 {
+    font-family: ccbiffbamboom, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin-left: 25px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0px black;
+    
+}
+.donnie-info img {
+    float: left;
+    width:40%;
+    margin:0px 25px 0px 20px;
+}
+
+.donnie-info p {
+    font-family: hero-new, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    border-left: 3px solid #955AA5;
+    margin: 10px 10px 10px 20px;
+    padding: 0px 0px 0px 10px;
+    display: inline-block;
+    width: 50%;
+}
+.donnie-info h3 {
+    font-family: hero-new, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color:#955AA5;
+    margin: 0px 0 5px 10px;
+    display: block;
+}
+
+/*MIKEY*/
+.orange-box{
+    margin: 400px 0px 50px 0px;
+    width: 100%;
+    height: 55px;
+    background-color: #F28119;
+    transform: rotate(5deg) skewY(-3deg);
+    position: sticky;
+    top:50px;
+    clear: both;
+
+}
+.orange-box h2 {
+    font-family: ccbiffbamboom, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin-right: 25px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0px black;
+    text-align: right;
+    
+}
+.mikey-info img {
+    float: right;
+    width:40%;
+    margin:0px 25px 0px 10px;
+}
+
+.mikey-info p {
+    font-family: hero-new, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    border-left: 3px solid #F28119;
+    margin: 10px 10px 10px 30px;
+    padding: 0px 0px 0px 10px;
+    display: inline-block;
+    width: 45%;
+}
+.mikey-info h3 {
+    font-family: hero-new, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color:#F28119;
+    margin: 40px 20px 5px 30px;
+    display: block;
+}
+
+/*LEO*/
+.blue-box{
+    margin: 200px 0px 50px 30px;
+    width: 100%;
+    height: 50px;
+    background-color: #0CAEF0;
+    transform: rotate(-12deg) skewY(11deg);
+    position: sticky;
+    top:50px;
+    clear: both;
+}
+.blue-box h2 {
+    font-family: ccbiffbamboom, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin-left: 25px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0px black;
+    
+}
+.leo-info img {
+    float: left;
+    width:40%;
+    margin:0px 25px 0px 20px;
+}
+
+.leo-info p {
+    font-family: hero-new, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    border-left: 3px solid #0CAEF0;
+    margin: 10px 10px 10px 20px;
+    padding: 0px 0px 0px 10px;
+    display: inline-block;
+    width: 45%;
+}
+.leo-info h3 {
+    font-family: hero-new, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color:#0CAEF0;
+    margin: 0px 0 5px 10px;
+    display: block;
+}
+
+
+/*RAPH*/
+.red-box{
+    margin: 200px 0px 50px 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #DE3234;
+    transform: rotate(10deg) skewY(-9deg);
+    position: sticky;
+    top:50px;
+    clear: both;
+}
+.red-box h2 {
+    font-family: ccbiffbamboom, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin-right: 25px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0px black;
+    text-align: right;
+    
+}
+.raph-info img {
+    float: left;
+    width:40%;
+    margin:0px 25px 0px 20px;
+    float: right;
+}
+
+.raph-info p {
+    font-family: hero-new, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    border-left: 3px solid #DE3234;
+    margin: 10px 20px 10px 40px;
+    padding: 0px 0px 0px 10px;
+    display: inline-block;
+    width: 45%;
+}
+.raph-info h3 {
+    font-family: hero-new, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color:#DE3234;
+    margin: 0px 0 5px 30px;
+    display: block;
+}
+
+
