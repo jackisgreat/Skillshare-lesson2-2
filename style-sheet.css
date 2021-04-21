@@ -56,23 +56,30 @@ nav a:active, p:active {
     float: right;
 }
 header .navigation img {
-    float: none;
     position: absolute;
     top: 50%;    
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75px;
     border-radius: 50%;
-    border: 2px solid #F4B736;
-        animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    border: 3px solid #F4B736;
+
 }
 header .navigation img:hover {
-
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
     transform: rotate(360deg)
 }
 
+.rotate-hover {
+    transition: 1s;
+    display: block;
+}
+
+.rotate-hover:hover {
+    transform: rotate(360deg)
+}
 
 
 
